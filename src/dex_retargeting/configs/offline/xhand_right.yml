@@ -1,0 +1,14 @@
+retargeting:
+  type: position
+  urdf_path: xhand_right/xhand_right_collision.urdf 
+  #allegro_hand/allegro_hand_right_modified.urdf
+
+  target_joint_names: null
+  target_link_names: [ "right_hand_thumb_rota_tip", "right_hand_index_rota_tip", "right_hand_mid_tip", "right_hand_ring_tip", "right_hand_pinky_tip"]
+
+  target_link_human_indices: [ 4, 8, 12, 16, 20]
+  add_dummy_free_joint: True
+
+  # A smaller alpha means stronger filtering, i.e. more smooth but also larger latency
+  # 1 means no filter while 0 means not moving
+  low_pass_alpha: 1
